@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+      font-weight: 2rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+#home .container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home{
+    background-image: url(/img/15-Best-Luxury-Cars-of-2017-for-Under-100000-GEAR-PATROL-full-lead.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#home::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#home h1{
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    font-weight: 4;
+    color:white;
+    position: relative;
+    text-transform: uppercase;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1ss;
+}
+
+#home h1:nth-child(1){
+    animation-delay:  1s;
+}
+
+#home h1:nth-child(2){
+    animation-delay:  2s;
+}
+
+#home h1:nth-child(3){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay:  3s;
+}
+
+#home h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: white;
+    animation: text_reaveal_box .5s ease forwards;
+    animation-delay: 1.5s;
+
+}
+#home h1:nth-child(1) span{
+    animation-delay:  .5s;
+}
+
+#home h1:nth-child(2) span{
+    animation-delay:  1.5s;
+}
+
+#home h1:nth-child(3) span{
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay:  3.5s;
+}
+
+#home .button{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 36px;
+    transition: .3s ease background-color;
+}
+
+#home .button:hover{
+       color: black;
+       background-color: white;
+}
+
+
+/*Product*/
+#products .product-container{
+    height: 100vh;
+    left: 0;
+    top: -1px;
+    margin-top: 100px;
+} 
+#products  h1 .product-title {
+    margin-left: 150px;
+    align-items: center;
+    justify-content: center;
+}
+#products .product-items{
+    display: flex-box;
+    flex-direction: row;
+    margin-top: 100px ;
+    
+}
+#products .card-body{
+    display: flex;
+    margin-left: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#product .card-body p{
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#products .button{
+    background-color: rgb(30, 85, 225);
+    border: 1px solid rgb(30, 85, 225);
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');html,
+ body{height: 100%}body{display: grid;background: #fff;
+    font-family: 'Manrope', sans-serif}
+ .mydiv{margin-top: 50px;margin-bottom: 50px}
+ .cross{font-size:10px}.padding-0{padding-right: 5px;padding-left: 5px}
+ .img-style{margin-left: -11px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1
+    );border-radius: 5px;max-width: 104% !important}.m-t-20{margin-top: 20px
+    }.bbb_background{background-color: #E0E0E0 !important}.ribbon{width: 150px;
+        height: 150px;overflow: hidden;position: absolute}
+        .ribbon span{position: absolute;display: block;
+            width: 34px;border-radius: 50%;padding: 8px 0;
+            background-color: #3498db;box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+            color: #fff;font: 100 18px/1 'Lato', sans-serif;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .2)
+            ;text-transform: uppercase;text-align: center}
+            .ribbon-top-right{top: -10px;right: -10px}
+            .ribbon-top-right::before, .ribbon-top-right::after{border-top-color: transparent;
+                border-right-color: transparent}.ribbon-top-right::before{top: 0;left: 17px}
+                .ribbon-top-right::after{bottom: 17px;right: 0}.sold_stars i{color: orange}
+                .ribbon-top-right span{right: 17px;top: 17px}div{display: block;position: relative;
+                    -webkit-box-sizing: border-box;-moz-box-sizing: border-box;
+                    box-sizing: border-box}
+                    .bbb_deals_featured{width: 100%}
+                    .bbb_deals{width: 100%
+                        ;margin-right: 7%;
+                        padding-top: 80px;
+                        padding-left: 25px;
+                        padding-right: 25px;
+                        padding-bottom: 34px;box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+                        border-radius: 5px;margin-top: 0px}.bbb_deals_title{position: absolute;
+                            top: 10px;left: 22px;font-size: 18px;font-weight: 500;color: #000000}
+                            .bbb_deals_slider_container{width: 100%}.bbb_deals_item{width: 100% !important}
+                            .bbb_deals_image{width: 100%}.bbb_deals_image img{width: 100%}.bbb_deals_content{margin-top: 33px}
+                            .bbb_deals_item_category a{font-size: 14px;font-weight: 400;color: rgba(0, 0, 0, 0.5)}
+                            .bbb_deals_item_price_a{font-size: 14px;font-weight: 400;color: rgba(0, 0, 0, 0.6)}
+                            .bbb_deals_item_price_a strike{color: red}.bbb_deals_item_name{font-size: 24px;
+                                font-weight: 400;color: #000000}.bbb_deals_item_price{font-size: 24px;
+                                    font-weight: 500;color: #6d6e73}.available{margin-top: 19px}
+                                    .available_title{font-size: 16px;color: rgba(0, 0, 0, 0.5);
+                                        font-weight: 400}.available_title span{font-weight: 700}
+                                        @media only screen and (max-width: 991px){
+        .bbb_deals{width: 100%;margin-right: 0px}}
+
+    @media only screen and (max-width: 575px){.bbb_deals{padding-left: 15px;
+    padding-right: 15px}
+    .bbb_deals_title{left: 15px;
+        font-size: 16px}
+        .bbb_deals_slider_nav_container{right: 5px}
+        .bbb_deals_item_name, .bbb_deals_item_price{font-size: 20px}}
+
+/*end -- Product*/
+
+/* about*/
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+
+}
+#about .col-left{
+    width: 250px;
+    height: 360px;
+    
+}
+#about .col-right{
+    width: 100%;
+}
+
+#about .col-right h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+
+#about .col-right p{
+    margin-bottom: 20px;
+}
+#about .about .col-left .about-img::after{
+    left: -45px;
+    top:34px;
+    height: 98%;
+    width: 98%;
+    border: 10px solid grey;
+}
+
+#about .col-right {
+    width: 100%;
+}
+#about .col-right h1{
+    text-align: left;
+    
+}
+#about .col-right h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+    
+}
+
+/* end -- about*/
+
+/*contact us*/
+#contact-form{
+     position: relative;
+     justify-content: center;
+}
+/*end contact us*/
+
+
+ /* KEY FRAMES*/
+@keyframes text_reveal_box {
+    50%{
+        width: 100%;
+        left: 0;
+    }
+  100%{
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes text_reveal {
+    100%{
+        color: white;
+    }
+}
+
+@keyframes text_reveal_name {
+    100%{
+        color: white;
+        font-weight: 500px;
+    }
+}
+/*end key frames*/
