@@ -332,6 +332,7 @@ a{
     font-weight:1px ;
 }
 #product-container .card {
+    background-color:  rgb(230, 230, 240);
     border: 1px solid #405060;
     width: 100%;
     height: 100%;
@@ -347,6 +348,19 @@ a{
 
 #product-container .product-bottom .product-items .row .card-group .card .card-img-top{
     width: 250px;
+}
+
+
+#product-container button,
+#repairs-container button {
+    background-color: orange;
+    border: none;
+    border-radius: 20%;
+    margin-left: 50px;
+    width: 200px;
+    height: 20px;
+    font-weight: 100;
+    color: white;
 }
 /*end -- Home page Products*/
 
@@ -446,6 +460,10 @@ form .form-content .title a{
 /*end -- Sign - in form*/
 
 
+
+
+
+
 /*Cart page*/
 #cartcontainer {
     margin-top: 150px;
@@ -518,8 +536,49 @@ form .form-content .title a{
     height: 80px;
     object-fit: cover;
 }
+
+
+
 /*End-- Cart page*/
 
+
+/*Contact*/
+#contact-container{
+    left: 0;
+    top: 0;
+    height: 100vh;
+
+}
+
+#contact-container .contact-header h1{
+    margin-top: 130px;
+    font-size: 3rem;
+    font-weight: 10;
+    text-align: center;
+    justify-content: space-around;
+    
+}
+
+#contact-container .col-right p{
+    width: 40vw;
+    margin-left:850px;
+    
+    
+}
+
+#contact-container .col-left {
+    margin-left: 200px;
+}
+
+#contact-container .col-right .header {
+    text-transform: none;
+    font-weight: 10;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 1100px;
+    
+}
+/*end contact*/
 
 
 
@@ -693,3 +752,32 @@ form .form-content .title a{
  /*end service*/
 }
 /* End media query for Desktop */
+
+/*css swapper*/
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+
+@media (min-width: 40em) {
+            
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+/*end --css swapper*/

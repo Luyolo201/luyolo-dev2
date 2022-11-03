@@ -1,6 +1,7 @@
-let carts =document.querySelectorAll('.add-cart');
 
-let products = [
+const carts =document.querySelectorAll('.add-cart');
+
+const products = [
     {
         name: "Keonigsegg",
         tag:  "keonigsegg",
@@ -56,6 +57,8 @@ function cartNumbers(product) {
     }
      setItems(product);
 }
+
+
 function setItems(product) {
     let cartItems = localStorage.getItem('productsIncart');
     cartItems = JSON.parse(cartItems);
@@ -97,30 +100,7 @@ function totalCost(product) {
     
 }
 
-function displayCart(); {
-    let cartItems = localStorage.getItem("productsInCart");
-    cartItems = JSON.parse(cartItems);
 
-    cartItems
-    let cartcontainer = document.querySelector
-    ("tr");
-
-    console.log(cartItems);
-    if( cartItems && cartcontainer) {
-        cartcontainer.innerHTML = '';
-        Object.values(cartItems).map(item => {
-            cartcontainer.innerHTML += 
-            <tbody>
-                <tr>
-                   <td><ion-ion name="close-circle"></ion-ion></td>
-                   <td><img src="./img/${item.tag}.jpg"></img></td>
-                   <td><span>${item.name}</span></td>
-                </tr>
-            </tbody>
-        });
-          
-    }
-}
 
 onLoadCartNumbers();
-displayCart();  
+ 
