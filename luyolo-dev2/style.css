@@ -318,20 +318,20 @@ a{
 /*end Review*/
 
 /*Home page Products*/
-#product-container .product-top .product-title h1{
+#product .container  h1{
     text-align: center;
-    margin-top: 100px;
+    margin-top: -400px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 3rem;
     font-weight: 200;
 }
 
-#product-container .product-top .product-title h1 span {
+#product .container .product-top .product-title h1 span {
     color: aqua;
 }
 
-#product-container .product-bottom .product-items .row .card-group .card {
+#product .container .product-bottom .product-items .row .card-group .card {
     display: inline-block;
     align-items: center;
     justify-content: space-between;
@@ -341,41 +341,42 @@ a{
     margin-left: 75px;
     
 }
-#product-container   p{
+#product .container   p{
     margin-top: 30px;
     text-align: center;
     text-transform: uppercase;
     font-size: 17px;
     font-weight:1px ;
 }
-#product-container .card {
+#product .container .card {
     background-color:  rgb(230, 230, 240);
     border: 1px solid #405060;
+    border-radius: 10%;
     width: 100%;
     height: 100%;
     padding: 10px 10px;   
     
 }
 
-#product-container  a{
+#product .container  a{
 
     margin-top: 10px;
     margin-left: 100px;
 }
 
-#product-container .product-bottom .product-items .row .card-group .card .card-img-top{
+#product .container .product-bottom .product-items .row .card-group .card .card-img-top{
     width: 250px;
 }
 
 
-#product-container button,
+#product .container button,
 #repairs-container button {
     background-color: orange;
     border: none;
-    border-radius: 20%;
-    margin-left: 50px;
-    width: 200px;
-    height: 20px;
+    border-radius: 0%;
+    margin-left: 80px;
+    width: 100px;
+    height: 30px;
     font-weight: 100;
     color: white;
 }
@@ -797,4 +798,10 @@ form .form-content .title a{
       margin-top: 7rem;
     }
   }
+
+@media only screen and (min-width: 1200px) {
+    #review-container .img{
+        width: 20px;
+    }
+}
 /*end --css swapper*/
